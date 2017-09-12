@@ -65,6 +65,7 @@ jobs:
   - aggregate:
     - get: artifact
       passed: [build]
+      trigger: true
     - get: app
     - get: version
       passed: [build]
