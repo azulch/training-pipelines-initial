@@ -47,7 +47,7 @@ for name in $app_names; do
     then
 	  echo "Cleaning up blue!"
       # TO DO: clean up blue
-	  cf unmap-route -f $name $CF_DOMAIN --hostname $CF_HOSTNAME
+	  cf unmap-route $name $CF_DOMAIN --hostname $CF_HOSTNAME
 	  cf d -f $name
     fi
 done
